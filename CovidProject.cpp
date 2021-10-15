@@ -76,10 +76,10 @@ int main()
 			cout << "Is the patient alive or dead?\n" << endl;
 			getline(cin, pStatus);
 
-			patientDataFile << std::setw(12) << pId << std::setw(13)  << pName << std::setw(20)
-				<< pDOB << std::setw(40) << pAddress << std::setw(30) << pVisitedLocation
-				<< std::setw(30) << pDateTime << std::setw(30) << pLastOverseasTravel << std::setw(30)
-				<< pCovidTest << std::setw(30) << pStatus << endl;
+			patientDataFile << pId << "\t" << pName << "\t"
+				<< pDOB << "\t" << pAddress << "\t" << pVisitedLocation
+				<< "\t" << pDateTime << "\t" << pLastOverseasTravel << "\t"
+				<< pCovidTest << "\t" << pStatus << endl;
 
 			patientDataFile.close();
 
